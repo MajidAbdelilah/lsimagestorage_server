@@ -1,0 +1,1 @@
+{"status":"ok","data":{"downloadPage":"https://gofile.io/d/lPLtgz","code":"lPLtgz","parentFolder":"78e918d5-707e-4adb-9ea2-78abef123ef7","fileId":"c28752ab-a572-4d78-8074-4829509e9b8c","fileName":"test.txt","md5":"6d5117f6c04a462f96841c6c22d0af0f"}}

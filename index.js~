@@ -1,0 +1,37 @@
+const express = require("express");
+const app = express();
+const { Deta } = require("deta");
+const multer = require("multer");
+const upload = multer({ dest: '/tmp' })
+require('dotenv').config();
+const { exec } = require("child_process");
+const token = process.env.TOKEN
+const tmp= process.env.TMP
+
+app.get("/", (req, res)=>{
+    res.send("GET OUT OF HERE");
+});
+
+
+
+app.get("/upload_image", async (req, res)=>{
+
+    exec("curl -o output.txt -F file=@test.txt -F token="+token+" -F folderId="+tmp+" https://store1.gofile.io/uploadFile", (error, stdout, stderr) => {
+	if (error) {
+            console.log(`error: ${error.message}`);
+            return;
+	}
+	if (stderr) {
+            console.log(`stderr: ${stderr}`);
+            return;
+	}
+	console.log(`stdout: ${stdout}`);
+	
+    });
+    
+});
+
+
+app.listen(9000);
+
+module.exports = app;
