@@ -1,0 +1,1 @@
+{"id":"577fb857-9e54-4dbc-89f6-492ccf46f0dc","space":37584,"runtime":"nodejs14.x","name":"upload_image","path":"p0ux5u","project":"a0cmtta6","account":"144798365827","region":"eu-central-1","deps":["multer@^1.4.5-lts.1","request@^2.88.2","deta@^1.1.0","dotenv@^16.0.3","express@^4.18.2"],"envs":null,"public":false,"log_level":"debug","cron":""}
